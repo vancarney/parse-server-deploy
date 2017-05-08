@@ -1,0 +1,17 @@
+{
+  "name": "parse-nodeapp",
+  "version": "1.0.0",
+  "description": "parse server setup from npm package",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npm install -g parse-server mongodb-runner",
+    "prestart": "mongodb-runner start &",
+    "start": "parse-server --appId APPLICATION_ID --masterKey MASTER_KEY --databaseURI mongodb://localhost/test",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Van Schroeder",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "parse-server": "^2.3.8"
+  }
+}
